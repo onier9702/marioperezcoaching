@@ -1,0 +1,9 @@
+<button
+  [class]="attributeClass() ?? 'button mt-4'"
+  type="submit"
+  [disabled]="isFormSubmitting()"
+  [attr.name]="attributeName()"
+>
+  @if (!isFormSubmitting()) { {{ primaryText() }} } @else {
+  {{ secondaryText() }} <app-spinner /> }
+</button>

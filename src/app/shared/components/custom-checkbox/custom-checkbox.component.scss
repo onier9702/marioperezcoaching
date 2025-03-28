@@ -1,0 +1,30 @@
+.custom_checkbox {
+  border-radius: 0.3rem;
+  background-color: var(--gray);
+  display: flex;
+  height: 4.4rem;
+  position: relative;
+  width: 100%;
+
+  .custom_checkbox_false,
+  .custom_checkbox_true {
+    cursor: pointer;
+    color: var(--black);
+    display: flex;
+    letter-spacing: var(--letter_spacing);
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+}
+
+.blue_toggle {
+  background-color: var(--primary_green);
+}
+
+.icon_lock {
+  color: var(--title);
+  position: absolute;
+  top: -2.1rem;
+  right: 0.1rem;
+}

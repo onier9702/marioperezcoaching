@@ -1,0 +1,20 @@
+<div class="custom_checkbox">
+  <div
+    class="custom_checkbox_false"
+    [class.blue_toggle]="!checkboxVariableValue()"
+    (click)="toggleCheckbox(false)"
+  >
+    {{ negativeLabel() }}
+  </div>
+  <div
+    class="custom_checkbox_true"
+    [class.blue_toggle]="checkboxVariableValue()"
+    (click)="toggleCheckbox(true)"
+  >
+    {{ affirmativeLabel() }}
+  </div>
+
+  @if (isDisabled()) {
+  <i class="fa-solid fa-lock icon_lock" title="Deshabilitado"></i>
+  }
+</div>

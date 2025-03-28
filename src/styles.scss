@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@use "./_globals.scss";
+@use "./_utilities.scss";
+@use "./mixins";
+
+:root {
+  // Fonts
+  --font_primary: "Noto Sans", sans-serif;
+  --font_secondary: "Lobster Two", serif;
+
+  // Media Queries
+  --phone: 480px;
+  --tablet: 768px;
+  --desktop: 1024px;
+
+  // Colors
+  --primary: #a68b36;
+  --secondary: #816b28;
+
+  --letter: #415a77;
+  --title: #092648;
+  --background: #faf7f6;
+  --gray: #adb5bd;
+  --black: #000;
+  --text: #686b6d;
+  --white: #fff;
+  --light: #ced4da;
+
+  // Letter space
+  --letter_space: 0.4rem;
+  // Border radius
+  --border_radius: 2rem;
+}

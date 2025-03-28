@@ -1,0 +1,21 @@
+<div class="navbar">
+  <div class="navbar_ctx container">
+    <div class="navbar_ctx_logo">
+      <img
+        src="../../../assets/imgs/logos/mp_logo.svg"
+        width="210px"
+        alt="mp_logo"
+      />
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="navbar_desktop">
+      <ul class="navbar_desktop_ul">
+        @for (menu of menuService.menus; track $index) {
+        <li class="navbar_desktop_ul_menu">{{ menu.label }}</li>
+        }
+      </ul>
+    </nav>
+    <!-- End Desktop Navigation -->
+  </div>
+</div>

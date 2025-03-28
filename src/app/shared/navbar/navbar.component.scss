@@ -1,0 +1,28 @@
+.navbar {
+  background-color: var(--black);
+  padding: 1.2rem 0rem;
+
+  .navbar_ctx {
+    display: flex;
+    align-items: center;
+  }
+}
+.navbar_ctx_logo {
+  margin-right: 2rem;
+}
+
+.navbar_desktop_ul {
+  display: flex;
+  align-items: center;
+
+  .navbar_desktop_ul_menu {
+    cursor: pointer;
+    color: var(--white);
+    margin-right: 3rem;
+    letter-spacing: var(--letter_space);
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
+}
