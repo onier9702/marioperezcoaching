@@ -141,7 +141,8 @@
 
   .youtube_grid_box_img {
     object-fit: cover;
-    object-position: top;
+    border-top-left-radius: var(--border_radius);
+    border-top-right-radius: var(--border_radius);
     height: 20rem;
     width: 100%;
   }
@@ -153,7 +154,7 @@
     // letter-spacing: 0.12rem;
   }
   .youtube_grid_box_info_text {
-    color: var(--gray);
+    color: var(--letter);
     font-size: 1.6rem;
     margin-bottom: 2rem;
   }

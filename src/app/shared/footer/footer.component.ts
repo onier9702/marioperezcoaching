@@ -1,6 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-footer',
@@ -8,6 +7,6 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [TranslateModule, RouterLink],
+  imports: [RouterLink],
 })
 export class FooterComponent {}
